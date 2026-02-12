@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 def calculator():
         print("Menu:")
         print("1. Add")
@@ -31,4 +32,39 @@ def calculator():
             else:
                 print("Error: Cannot divide by zero.")
         else:
+=======
+def calculator():
+        print("Menu:")
+        print("1. Add")
+        print("2. Subtract")
+        print("3. Multiply")
+        print("4. Divide")
+        print("5. Exit")
+        
+        choice = input("Enter your choice (1-5): ")
+        
+        if choice == '5':
+            print("Exiting the calculator. Goodbye!")
+            return
+        
+        num1 = float(input("Enter the first number: "))
+        num2 = float(input("Enter the second number: "))
+        
+        if choice == '1':
+            result = num1 + num2
+            print(f"The result of {num1} + {num2} is: {result}")
+        elif choice == '2':
+            result = num1 - num2
+            print(f"The result of {num1} - {num2} is: {result}")
+        elif choice == '3':
+            result = num1 * num2
+            print(f"The result of {num1} * {num2} is: {result}")
+        elif choice == '4':
+            if num2 != 0:
+                result = num1 / num2
+                print(f"The result of {num1} / {num2} is: {result}")
+            else:
+                print("Error: Cannot divide by zero.")
+        else:
+>>>>>>> c3c4bc532b86ef14ebaf740d3d6549be08bb4c39
             print("Invalid choice. Please try again.")
